@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+import "proto/gRPCCommunication/GrpcHeader.proto";
+import "proto/gRPCCommunication/GrpcStepInput.proto";
+import "proto/gRPCCommunication/GrpcStepOutput.proto";
+import "proto/gRPCCommunication/GrpcParameter.proto";
+
+package gRPCCommunication;
+
+message GrpcPackage {
+  GrpcHeader header = 1;
+  GrpcStepInput input = 2;
+  GrpcStepOutput output = 3;
+  repeated GrpcParameter trainingParameters = 4;
+}

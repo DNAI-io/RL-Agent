@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+import "proto/gRPCCommunication/GrpcProtoType.proto";
+
+package gRPCCommunication;
+
+message GrpcStepOutput {
+  string stringObervations = 1;
+  repeated float floatObervations = 2;
+  repeated int32 intObervations = 3;
+  float reward = 4;
+  bool done = 5;
+  map<string, bytes> info = 6;
+  repeated GrpcProtoType obervationType = 7;
+  repeated GrpcProtoType infoType = 8;
+}

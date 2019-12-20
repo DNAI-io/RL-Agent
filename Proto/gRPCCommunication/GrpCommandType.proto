@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package gRPCCommunication;
+
+enum GrpCommandType {
+    CONNECT = 0;
+    RESET = 1;
+    STEP_INPUT = 2;
+    STEP_OUTPUT = 3;
+    QUIT = 4;
+}

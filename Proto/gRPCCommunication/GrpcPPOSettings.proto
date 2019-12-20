@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package gRPCCommunication;
+
+message GrpcPPOSettings {
+  int32 numAction = 1;
+  float valueFactor = 2;
+  float entropyFactor = 3;
+  float epsilon = 4;
+  float learningRate = 5;
+  string learningRateDecay = 6;
+  float grapClip = 7;
+
+  float loadEpisodeSaved = 8;
+  float savedEpisode = 9;
+
+  float timeHozizon = 10;
+  float batchSize = 11;
+  float gamma = 12;
+  float lam = 13;
+
+  int32 epoch = 14;
+  int32 actors = 15;
+  int32 finalStep = 16;
+}

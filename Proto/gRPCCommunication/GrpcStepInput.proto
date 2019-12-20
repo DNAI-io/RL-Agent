@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+package gRPCCommunication;
+
+message GrpcStepInput {
+  repeated float actions = 1;
+}

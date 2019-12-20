@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+import "proto/gRPCCommunication/GrpcPackage.proto";
+
+package gRPCCommunication;
+
+// The GrpcCommunicator service definition.
+service GrpcCommunicator {
+  rpc Communicate (GrpcPackage) returns (GrpcPackage) {}
+}

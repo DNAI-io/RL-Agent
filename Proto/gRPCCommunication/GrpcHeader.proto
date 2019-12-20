@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+import "proto/gRPCCommunication/GrpCommandType.proto";
+
+package gRPCCommunication;
+
+message GrpcHeader {
+  int32 magicNumber = 1;
+  int32 status = 2;
+  GrpCommandType commandTypes = 3;
+}
