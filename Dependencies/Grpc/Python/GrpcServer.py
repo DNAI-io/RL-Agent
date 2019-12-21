@@ -5,12 +5,12 @@ import grpc
 from ctypes import *
 import random
 
-import GeneratedProto.gRPCCommunication.GrpcCommunicator_pb2_grpc as GrpcCommunicator
-import GeneratedProto.gRPCCommunication.GrpcPackage_pb2 as GrpcPackage
-import GeneratedProto.gRPCCommunication.GrpcHeader_pb2 as GrpcHeader
-import GeneratedProto.gRPCCommunication.GrpCommandType_pb2 as GrpcCommandType
-import GeneratedProto.gRPCCommunication.GrpcStepOutput_pb2 as GrpcStepOutput
-import GeneratedProto.gRPCCommunication.GrpcStepInput_pb2 as GrpcStepInput
+import proto.gRPCCommunication.GrpcCommunicator_pb2_grpc as GrpcCommunicator
+import proto.gRPCCommunication.GrpcPackage_pb2 as GrpcPackage
+import proto.gRPCCommunication.GrpcHeader_pb2 as GrpcHeader
+import proto.gRPCCommunication.GrpCommandType_pb2 as GrpcCommandType
+import proto.gRPCCommunication.GrpcStepOutput_pb2 as GrpcStepOutput
+import proto.gRPCCommunication.GrpcStepInput_pb2 as GrpcStepInput
 
 
 class GrpcService(GrpcCommunicator.GrpcCommunicatorServicer):
