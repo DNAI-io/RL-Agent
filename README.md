@@ -1,6 +1,6 @@
-RLAgent
+# RLAgent
 
-#Clone and install dependencies (with powershell)
+## Clone and install dependencies (with powershell)
 ```
 git clone --recurse-submodules -j8 git@github.com:DNAI-io/RL-Agent.git
 cd RL-Agent
