@@ -3,6 +3,9 @@
 #include "RL_AgentBPLibrary.h"
 #include "RL_Agent.h"
 
+#pragma warning(disable:4582)
+#pragma warning(disable:4583)
+
 URL_AgentBPLibrary::URL_AgentBPLibrary(const FObjectInitializer& ObjectInitializer)
 : Super(ObjectInitializer)
 {

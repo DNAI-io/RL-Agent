@@ -3,6 +3,9 @@
 
 #include "Agent.h"
 
+#pragma warning(disable:4582)
+#pragma warning(disable:4583)
+
 // Sets default values for this component's properties
 UAgent::UAgent()
 {
