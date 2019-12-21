@@ -9,6 +9,10 @@
 THIRD_PARTY_INCLUDES_START
 #include "GrpcClient.h"
 THIRD_PARTY_INCLUDES_END
+
+#pragma warning(disable:4582)
+#pragma warning(disable:4583)
+
 #include "GrpcUnrealLibrary.generated.h"
 
 /*

@@ -15,6 +15,7 @@
 #pragma warning(disable:4101)
 #pragma warning(disable:4018)
 #pragma warning(disable:4530)
+#pragma warning(disable:4582)
 #pragma warning(disable:4583)
 
 #include "torch/script.h"
