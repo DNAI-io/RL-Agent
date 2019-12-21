@@ -15,6 +15,7 @@
 #pragma warning(disable:4101)
 #pragma warning(disable:4018)
 #pragma warning(disable:4530)
+#pragma warning(disable:4583)
 
 #include "torch/script.h"
 
@@ -202,16 +203,22 @@ void UGrpcUnrealLibrary::LoadModel(const FString& path)
 		std::cerr << "error loading the model\n";
 	}
 
-	// Create a vector of inputs.
-	torch::Device device(torch::kCUDA);
-	std::vector<torch::jit::IValue> inputs;
-	std::vector<torch::jit::IValue> inputs2;
-	inputs.push_back(torch::zeros({ 1, 8 }, device));
-	inputs2.push_back(torch::ones({ 1, 8 }, device));
+	try {
+		// Create a vector of inputs.
+		torch::Device device(torch::kCUDA);
+		std::vector<torch::jit::IValue> inputs;
+		std::vector<torch::jit::IValue> inputs2;
+		inputs.push_back(torch::zeros({ 1, 8 }, device));
+		inputs2.push_back(torch::ones({ 1, 8 }, device));
 
-	// Execute the model and turn its output into a tensor.
-	at::Tensor output = module.forward(inputs).toTensor();
-	std::cout << output.slice(/*dim=*/1, /*start=*/0, /*end=*/5) << '\n';
-	at::Tensor output2 = module.forward(inputs2).toTensor();
-	std::cout << output2.slice(/*dim=*/1, /*start=*/0, /*end=*/5) << '\n';
+		// Execute the model and turn its output into a tensor.
+		at::Tensor output = module.forward(inputs).toTensor();
+		std::cout << output.slice(/*dim=*/1, /*start=*/0, /*end=*/5) << '\n';
+		at::Tensor output2 = module.forward(inputs2).toTensor();
+		std::cout << output2.slice(/*dim=*/1, /*start=*/0, /*end=*/5) << '\n';
+	}
+	catch (std::exception &e)
+	{
+
+	}
 }
