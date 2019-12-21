@@ -1,10 +1,5 @@
 // Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 
-#include "GrpcUnrealLibrary.h"
-#include "GrpcUnreal.h"
-#include "gRPCCommunication/GrpcPackage.pb.h"
-#include "gRPCCommunication/GrpcParameter.pb.h"
-
 #pragma warning(disable:4800) 
 #pragma warning(disable:4668)  
 #pragma warning(disable:4273)  
@@ -18,6 +13,10 @@
 #pragma warning(disable:4582)
 #pragma warning(disable:4583)
 
+#include "GrpcUnrealLibrary.h"
+#include "GrpcUnreal.h"
+#include "gRPCCommunication/GrpcPackage.pb.h"
+#include "gRPCCommunication/GrpcParameter.pb.h"
 #include "torch/script.h"
 
 #include <functional>

@@ -1,5 +1,7 @@
 // Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 
+#pragma warning(disable:4582)
+#pragma warning(disable:4583)
 #include "GrpcUnreal.h"
 
 #define LOCTEXT_NAMESPACE "FGrpcUnrealModule"

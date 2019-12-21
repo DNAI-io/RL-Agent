@@ -1,10 +1,9 @@
 // Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 
-#include "RL_AgentBPLibrary.h"
-#include "RL_Agent.h"
-
 #pragma warning(disable:4582)
 #pragma warning(disable:4583)
+#include "RL_AgentBPLibrary.h"
+#include "RL_Agent.h"
 
 URL_AgentBPLibrary::URL_AgentBPLibrary(const FObjectInitializer& ObjectInitializer)
 : Super(ObjectInitializer)

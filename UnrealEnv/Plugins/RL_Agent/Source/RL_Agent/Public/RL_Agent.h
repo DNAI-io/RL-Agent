@@ -2,6 +2,8 @@
 
 #pragma once
 
+#pragma warning(disable:4582)
+#pragma warning(disable:4583)
 #include "Modules/ModuleManager.h"
 
 class FRL_AgentModule : public IModuleInterface

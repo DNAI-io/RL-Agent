@@ -1,10 +1,8 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-
-#include "Agent.h"
-
 #pragma warning(disable:4582)
 #pragma warning(disable:4583)
+#include "Agent.h"
 
 // Sets default values for this component's properties
 UAgent::UAgent()
